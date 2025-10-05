@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineGrid</title>
+    <style>
+        body{
+          background-color: black;
+           padding: auto;
+           text-align: center;
+           
+        }
+          .image{
+            height: 700px; 
+             width: 100vw;  
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 30px;  
+            box-sizing: border-box;
+            padding-top: 10px;
+
+        }
+        div{
+          gap: 25px;
+          margin-left: 0px;
+        }
+        .image img{
+            height: 280px;
+            width: 100%;
+            object-fit: cover;
+            border: 5px solid white;
+            border-radius: 30px;
+            display: block;
+            margin: 40px;
+            margin-top: 5px;
+            margin-right: 20px;
+            margin-left: 0%;
+            
+           }
+          h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+           
+          background-color: white;
+          display: inline-block; 
+          padding: 8px 16px;
+          border-radius: 8px;
+          margin: 20px auto;
+           margin-top: 50px;
+        }
+           @media (max-width: 600px) {
+            .image {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        }
+       
+         </style>
+</head>
+
+<body>
+          <h1>CineGrid</h1> 
+        <div class="image">
+                <div><img src="https://iili.io/KXwCobI.jpg" alt=""></div>
+               <div> <img src="https://iili.io/KXhtjPn.webp" alt=""></div>
+                <div><img src="https://iili.io/KXhtSN2.webp" alt=""></div>
+                <div><img src="https://iili.io/KXjNWiP.jpg" alt=""></div>
+                <div> <img src="https://iili.io/KXhtyV1.webp" alt=""></div>
+                <div><img src="https://iili.io/KXhtMwN.jpg" alt=""></div>
+                <div><img src="https://iili.io/KXhtiKu.jpg" alt=""></div>
+                <div><img src="https://iili.io/KXwCCRp.jpg" alt=""></div>
+                <div><img src="https://iili.io/KXhtZHx.webp" alt=""></div>
+         </div>
+</body>
+
+</html>

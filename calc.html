@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calcify</title>
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;padding:0;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    color:white
+}
+.calc{
+    width:320px;
+    background-color:gray;
+    border-radius:10px;
+    padding:15px
+}
+.screen{
+    height:80px;
+    background-color:lightgray;
+    color:black;
+    border-radius:8px;
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    padding-right:15px;
+    font-size:28px;
+    
+}
+.keys{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px
+}
+.key{
+    background-color:silver;
+    text-align:center;
+    padding:15px 0;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:default
+}
+.key.operator{
+    background-color:orange;
+    color:white
+}
+.key.zero{
+    grid-column:span 2
+    }
+</style>
+</head>
+<body>
+<div class="calc">
+  <div class="screen">0</div>
+  <div class="keys">
+    <div class="key">AC</div>
+    <div class="key">( )</div>
+    <div class="key">%</div>
+    <div class="key operator">÷</div>
+    <div class="key">7</div>
+    <div class="key">8</div>
+    <div class="key">9</div>
+    <div class="key operator">*</div>
+    <div class="key">4</div>
+    <div class="key">5</div>
+    <div class="key">6</div>
+    <div class="key operator">-</div>
+    <div class="key">1</div>
+    <div class="key">2</div>
+    <div class="key">3</div>
+    <div class="key operator">+</div>
+    <div class="key zero">0</div>
+    <div class="key">.</div>
+    <div class="key operator">=</div>
+  </div>
+</div>
+</body>
+</html>
